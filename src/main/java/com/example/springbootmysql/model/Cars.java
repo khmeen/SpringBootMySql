@@ -14,6 +14,8 @@ public class Cars {
     private String name;
     @Column(name = "model_name")
     private String modelName;
+    @Column(name = "rok_produkcji")
+    private String rokProdukcji;
 
     public Cars (){
     }
@@ -40,5 +42,13 @@ public class Cars {
 
     public void setModelName(String modelName) {
         this.modelName = modelName;
+    }
+
+    public String getRokProdukcji() {
+        return rokProdukcji;
+    }
+
+    public void setRokProdukcji(String rokProdukcji) {
+        this.rokProdukcji = rokProdukcji;
     }
 }
